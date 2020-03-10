@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Contacts </title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="Contacts.js"></script>
+</head>
+
+<body>
+    <h1 class = main_header>Pokemon Go Locations</h1>
+	<table class = "top_table" align = "center">
+		<thead>
+		  <th><a class = link_styles href="../HTMLPages/MainPage.html">Main Page</a></th>
+		  <th><a class = link_styles href="../HTMLPages/PokemonList.html">Pokemon Excellent</a></th>
+		  <th><a class = link_styles href="../HTMLPages/ShinyList.html">Shiny List</a></th>
+		  <th><a class = link_styles href="../HTMLPages/100IV.html">100IV Pokemon</a></th>
+		  <th><a class = link_styles href="../HTMLPages/pokemonLocations.html">Locations</a></th>
+		<thead>
+	  </table>
+	<div class="left">
+		<table id="table" class = "table2">
+			<tr>
+				<th class = "thpoke"> Name </th>
+				<th class = "thpoke"> Address </th>
+				<th class = "thpoke"> Pokemon Wiki </th>
+			</tr>
+			<tr onmouseover="changeMom()" onmouseout="changeMom2()">
+				<td class = "tdpoke">  Trapinch
+					<img id = "mom" alt = "mom" src = "mom.jpg" class = "picture">
+				</td>
+				<td class = "tdpoke" id="location_mom"> 206 Church St SE, Minneapolis, MN 55455 </td>
+				<td class = "tdpoke"> <a href="https://www.mcdonalds.com/us/en-us.html"> Mcdonalds </a> </td>
+			</tr>
+			<tr onmouseover="changeDad()" onmouseout="changeDad2()">
+				<td class = "tdpoke"> Chimchar
+					<img id = "dad" alt = "dad" src = "dad.jpg" class = "picture">
+			</td>
+				<td class = "tdpoke" id="location_dad"> 200 Union St SE, Minneapolis, MN 55455 </td>
+				<td class = "tdpoke"> <a href="https://www.facebook.com/"> FaceBook </a> </td>
+			</tr>
+			<tr onmouseover="changeFish()" onmouseout="changeFish2()">
+				<td class = "tdpoke"> Turtwig
+					<img id = "fish" alt = "fishy" src = "fish.jpg" class = "picture">
+			</td>
+				<td class = "tdpoke" id="location_fish"> Coffman Memorial Union 100 Union St. SE, Minneapolis, MN 55455 </td>
+				<td class = "tdpoke"> <a href="https://seaworld.com/"> Sea World </a> </td>
+			</tr>
+		</table>
+    </div>
+    <div id="map"></div>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFmgCyt1fwHvYVBv4TvLB-QWPqLa-FBc&callback=initMap&libraries=places"
+		type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script type="text/javascript">
+
+    $(function() {
+   $.getJSON('JSON/Kyue55IV.json', function(data) {
+       $.each(data.IV, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
+           "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
+           $(tblRow).appendTo("#Kyue55_100IV_Pokemon tbody");
+     });
+
+   });
+
+});
+    $(function() {
+   $.getJSON('JSON/BlackestNightIV.json', function(data) {
+       $.each(data.IV, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
+           "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
+           $(tblRow).appendTo("#Blackest_Night_100IV_Pokemon tbody");
+     });
+
+   });
+
+});
+    $(function() {
+   $.getJSON('JSON/BrightestDawnIV.json', function(data) {
+       $.each(data.IV, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
+           "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
+           $(tblRow).appendTo("#Brightest_Dawn_100IV_Pokemon tbody");
+     });
+
+   });
+
+});
+    $(function() {
+   $.getJSON('../JSON/WatermelonIV.json', function(data) {
+       $.each(data.IV, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
+           "<td>" + f.numberOfPokemon + "</td>" + "<td class>" + f.ownerOfPokemon + "</td>" + "</tr>"
+           $(tblRow).appendTo("#Watermelon_100IV_Pokemon tbody");
+     });
+
+   });
+
+});
+
+</script>
+</script>
+</head>
+
+<style>
+td[text="Kyue55"]{
+	text-decoration : underline;
+
+}
+.main_header {
+	text-decoration : underline;
+	text-align : center;
+	border-radius: 25px;
+	padding: 10px; 
+}
+	
+.link_styles{
+  border-radius: 25px;
+  padding: 15px; 
+  border : solid;
+}
+
+#Kyue55_100IV_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Kyue55_100IV_Pokemon td, #Kyue55_100IV_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+ 
+ #Watermelon_100IV_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Watermelon_100IV_Pokemon td, #Watermelon_100IV_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+  #Brightest_Dawn_100IV_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Brightest_Dawn_100IV_Pokemon td, #Brightest_Dawn_100IV_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+  #Blackest_Night_100IV_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Blackest_Night_100IV_Pokemon td, #Blackest_Night_100IV_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+</style>
+
+<body>
+<h1 class = main_header>100IV Pokemon Page</h1>
+
+<table align = "center">
+  <thead>
+    <th><a class = link_styles href="../HTMLPages/MainPage.html">Main Page</a></th>
+    <th><a class = link_styles href="../HTMLPages/PokemonList.html">Pokemon Excellent</a></th>
+    <th><a class = link_styles href="../HTMLPages/ShinyList.html">Shiny List</a></th>
+    <th><a class = link_styles href="../HTMLPages/100IV.html">100IV Pokemon</a></th>
+    <th><a class = link_styles href="../HTMLPages/pokemonLocations.html">Locations</a></th>
+  <thead>
+</table>
+
+<br><br>
+<table align = "center">
+<td valign = "top">
+	<h2 class = main_header>Kyue55 100IV Pokemon</h2>
+		<table id= "Kyue55_100IV_Pokemon"border="2">
+			<thead>
+				<th>Pokemon</th>
+				<th>Number of 100IV</th>
+				<th>Owner of 100IV</th>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+<td>
+
+<td valign = "top">
+	<h2 class = main_header>Watermelon 100IV Pokemon</h2>
+		<table id= "Watermelon_100IV_Pokemon" border="2">
+			<thead>
+				<th>Pokemon</th>
+				<th>Number of 100IV</th>
+				<th>Owner of 100IV</th>
+			</thead>
+			  <tbody>
+			  </tbody>
+		</table>
+
+<td>
+<td valign = "top">
+	<h2 class = main_header>Brightest_Dawn 100IV Pokemon</h2>
+		<table id= "Brightest_Dawn_100IV_Pokemon" border="2" >
+			<thead>
+				<th>Pokemon</th>
+				<th>Number of 100IV</th>
+				<th>Owner of 100IV</th>
+			</thead>
+		  <tbody>
+		  </tbody>
+		</table>
+</td>
+
+
+<td valign = "top">
+	<h2 class = main_header>Blackest_Night_100IV_Pokemon</h2>
+		<table id= "Blackest_Night_100IV_Pokemon" border="2">
+			<thead>
+				<th>Pokemon</th>
+				<th>Number of 100IV</th>
+				<th>Owner of 100IV</th>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+</td>
+</table>
+
+</body>
+</html>

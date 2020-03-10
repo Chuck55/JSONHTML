@@ -1,0 +1,80 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+   $.getJSON('JSON/pokemon.json', function(data) {
+       $.each(data.Pokemon, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
+           "<td>" + f.numberOfExcellents + "</td>" + "</tr>"
+           $(tblRow).appendTo("#pokemon_Go tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<style>
+.main_header {
+	text-decoration : underline;
+	text-align : center;
+	border-radius: 25px;
+	padding: 10px; 
+}
+	
+.link_styles{
+  border-radius: 25px;
+  padding: 15px; 
+  border : solid;
+}
+.background_color{
+	background-color : #3399ff ;
+}
+
+#pokemon_Go tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#pokemon_Go td, #pokemon_Go th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+
+</style>
+
+<body>
+<h1 class = main_header>Pokemon Page</h1>
+
+<table align = "center">
+  <thead>
+    <th><a class = link_styles href="../HTMLPages/MainPage.html">Main Page</a></th>
+    <th><a class = link_styles href="../HTMLPages/PokemonList.html">Pokemon Excellent</a></th>
+    <th><a class = link_styles href="../HTMLPages/ShinyList.html">Shiny List</a></th>
+    <th><a class = link_styles href="../HTMLPages/100IV.html">100IV Pokemon</a></th>
+    <th><a class = link_styles href="../HTMLPages/pokemonLocations.html">Locations</a></th>
+  <thead>
+</table>
+<br><br><br>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "pokemon_Go" align = "center" border="2">
+  <thead>
+            <th>Pokemon</th>
+            <th>Number of Excellents</th>
+  </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>

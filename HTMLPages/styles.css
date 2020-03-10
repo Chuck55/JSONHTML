@@ -1,0 +1,54 @@
+.pac-container {
+    z-index: 1100 !important;
+}
+.table2 {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+	float: left;
+	position:relative;
+	top:50px;
+	left:20px;
+}
+.top_table {
+	margin-top:50px;
+}
+.link_styles{
+	border-radius: 25px;
+	padding: 15px; 
+	border : solid;
+  }
+.tdpoke,.thpoke {
+	text-align: left;
+	padding: 8px;
+	border-radius: 1px;
+	border: 2px solid black;
+}
+.left {
+	float:left;
+}
+.main_header {
+	text-decoration : underline;
+	text-align : center;
+	border-radius: 25px;
+}
+
+.picture {
+	width: 50px;
+	height: 50px;
+	display: none;
+}
+
+#map {
+	height: 50%;
+	width: 50%;
+	float: right;
+	margin-left:20px;
+	position:relative;
+	top:-250px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
