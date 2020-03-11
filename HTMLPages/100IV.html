@@ -1,6 +1,7 @@
 <html>
 <head>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<link rel="stylesheet" type="text/css" href="stylesPages.css">
 
 <script type="text/javascript">
 
@@ -9,7 +10,7 @@
        $.each(data.IV, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
            "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
-           $(tblRow).appendTo("#Kyue55_100IV_Pokemon tbody");
+           $(tblRow).appendTo("#Kyue55_Pokemon tbody");
      });
 
    });
@@ -20,7 +21,7 @@
        $.each(data.IV, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
            "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
-           $(tblRow).appendTo("#Blackest_Night_100IV_Pokemon tbody");
+           $(tblRow).appendTo("#Blackest_Night_Pokemon tbody");
      });
 
    });
@@ -31,7 +32,7 @@
        $.each(data.IV, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
            "<td>" + f.numberOfPokemon + "</td>" + "<td>" + f.ownerOfPokemon + "</td>" + "</tr>"
-           $(tblRow).appendTo("#Brightest_Dawn_100IV_Pokemon tbody");
+           $(tblRow).appendTo("#Brightest_Dawn_Pokemon tbody");
      });
 
    });
@@ -42,7 +43,7 @@
        $.each(data.IV, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.pokemonName + "</td>" +
            "<td>" + f.numberOfPokemon + "</td>" + "<td class>" + f.ownerOfPokemon + "</td>" + "</tr>"
-           $(tblRow).appendTo("#Watermelon_100IV_Pokemon tbody");
+           $(tblRow).appendTo("#Watermelon_Pokemon tbody");
      });
 
    });
@@ -52,61 +53,6 @@
 </script>
 </script>
 </head>
-
-<style>
-td[text="Kyue55"]{
-	text-decoration : underline;
-
-}
-.main_header {
-    text-align: center;
-    width: 97%;
-    background-color: black;
-    color: white;
-    height: 60px;
-    padding: 20px;
-}
-	
-.link_styles{
-  border-radius: 25px;
-  padding: 15px; 
-  border : solid;
-}
-
-#Kyue55_100IV_Pokemon tr:nth-child(even){
-  background-color:  #e0e0e0;
-  }
-
-#Kyue55_100IV_Pokemon td, #Kyue55_100IV_Pokemon th {
-  border: 1px solid #ddd;
-  padding: 8px;
- }
- 
- #Watermelon_100IV_Pokemon tr:nth-child(even){
-  background-color:  #e0e0e0;
-  }
-
-#Watermelon_100IV_Pokemon td, #Watermelon_100IV_Pokemon th {
-  border: 1px solid #ddd;
-  padding: 8px;
- }
-  #Brightest_Dawn_100IV_Pokemon tr:nth-child(even){
-  background-color:  #e0e0e0;
-  }
-
-#Brightest_Dawn_100IV_Pokemon td, #Brightest_Dawn_100IV_Pokemon th {
-  border: 1px solid #ddd;
-  padding: 8px;
- }
-  #Blackest_Night_100IV_Pokemon tr:nth-child(even){
-  background-color:  #e0e0e0;
-  }
-
-#Blackest_Night_100IV_Pokemon td, #Blackest_Night_100IV_Pokemon th {
-  border: 1px solid #ddd;
-  padding: 8px;
- }
-</style>
 
 <body>
 <h1 class = main_header>100IV Pokemon</h1>
@@ -124,8 +70,8 @@ td[text="Kyue55"]{
 <br><br>
 <table align = "center">
 <td valign = "top">
-	<h2 class = main_header>Kyue55 100IV Pokemon</h2>
-		<table id= "Kyue55_100IV_Pokemon"border="2">
+	<h2 class = second_header>Kyue55 100IV Pokemon</h2>
+		<table class = "tableClass" id= "Kyue55_Pokemon" border="2">
 			<thead>
 				<th>Pokemon</th>
 				<th>Number of 100IV</th>
@@ -137,8 +83,8 @@ td[text="Kyue55"]{
 <td>
 
 <td valign = "top">
-	<h2 class = main_header>Watermelon 100IV Pokemon</h2>
-		<table id= "Watermelon_100IV_Pokemon" border="2">
+	<h2 class = second_header>Watermelon 100IV Pokemon</h2>
+		<table class = "tableClass" id= "Watermelon_Pokemon" border="2">
 			<thead>
 				<th>Pokemon</th>
 				<th>Number of 100IV</th>
@@ -150,8 +96,8 @@ td[text="Kyue55"]{
 
 <td>
 <td valign = "top">
-	<h2 class = main_header>Brightest_Dawn 100IV Pokemon</h2>
-		<table id= "Brightest_Dawn_100IV_Pokemon" border="2" >
+	<h2 class = second_header>Brightest_Dawn 100IV Pokemon</h2>
+		<table class = "tableClass" id= "Brightest_Dawn_Pokemon" border="2" >
 			<thead>
 				<th>Pokemon</th>
 				<th>Number of 100IV</th>
@@ -164,8 +110,8 @@ td[text="Kyue55"]{
 
 
 <td valign = "top">
-	<h2 class = main_header>Blackest_Night_100IV_Pokemon</h2>
-		<table id= "Blackest_Night_100IV_Pokemon" border="2">
+	<h2 class = second_header>Blackest Night 100IV Pokemon</h2>
+		<table class = "tableClass" id = "Blackest_Night_Pokemon" border="2">
 			<thead>
 				<th>Pokemon</th>
 				<th>Number of 100IV</th>

@@ -1,0 +1,64 @@
+td[text="Kyue55"]{
+	text-decoration : underline;
+
+}
+.main_header {
+    text-align: center;
+    width: 97%;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 20px;
+}
+.second_header {
+    width:25%;
+    height: 40px;
+    padding: 20px;
+    white-space: nowrap;
+}	
+.link_styles{
+  border-radius: 25px;
+  padding: 15px; 
+  border : solid;
+}
+
+#Kyue55_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Kyue55_Pokemon td, #Kyue55_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+ 
+#Watermelon_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Watermelon_Pokemon td, #Watermelon_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+#Brightest_Dawn_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Brightest_Dawn_Pokemon td, #Brightest_Dawn_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+#Blackest_Night_Pokemon tr:nth-child(even){
+  background-color:  #e0e0e0;
+  }
+
+#Blackest_Night_Pokemon td, #Blackest_Night_Pokemon th {
+  border: 1px solid #ddd;
+  padding: 8px;
+ }
+
+.background_color{
+	background-color : #3399ff ;
+}
+.button_div{
+  text-align: center;
+  }
