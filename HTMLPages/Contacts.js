@@ -2,24 +2,24 @@
 		var service, map, infoWindow, currentpos, directionsRenderer, directionsService;
 		var numberOfMarkers =0;
 		var markers = [];
-		function changeFish(){
-			document.getElementById("fish").style.display= "block";
+		function changeTurtwig(){
+			document.getElementById("Turtwig").style.display= "block";
 		}
-		function changeMom(){
-			document.getElementById("mom").style.display= "block";
+		function changeTrapinch(){
+			document.getElementById("Trapinch").style.display= "block";
 		}
-		function changeDad(){
-			document.getElementById("dad").style.display= "block";
+		function changeChimchar(){
+			document.getElementById("Chimchar").style.display= "block";
 		}
 		
-		function changeFish2(){
-			document.getElementById("fish").style.display= "none";
+		function removeTurtwig(){
+			document.getElementById("Turtwig").style.display= "none";
 		}
-		function changeMom2(){
-			document.getElementById("mom").style.display= "none";
+		function removeTrapinch(){
+			document.getElementById("Trapinch").style.display= "none";
 		}
-		function changeDad2(){
-			document.getElementById("dad").style.display= "none";
+		function removeChimchar(){
+			document.getElementById("Chimchar").style.display= "none";
 		}
 		var $ = function (id){
 			return(document.getElementById(id));
@@ -45,14 +45,13 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-
 			var marker = new google.maps.Marker({
-				position: center,
+				position: {lat: 44.9727, lng: -93.23540000000003},
 				map: map,
 				title: 'You are here',
 				icon: 'pokeball.jpg'
 			});
-            map.setCenter(pos);
+            map.setCenter({lat: 44.9727, lng: -93.23540000000003});
             currentpos = pos;
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());

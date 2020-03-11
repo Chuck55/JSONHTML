@@ -27,12 +27,6 @@
 .left {
 	float:left;
 }
-.main_header {
-	text-decoration : underline;
-	text-align : center;
-	border-radius: 25px;
-}
-
 .picture {
 	width: 50px;
 	height: 50px;
@@ -51,4 +45,12 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+.main_header {
+    text-align: center;
+    width: 97%;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 20px;
 }
